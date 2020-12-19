@@ -79,9 +79,9 @@ def all_supplies_in_holidays(holiday_hash)
           day.split("_")
           day.each do |word|
             puts "#{word.capitalize!.join(" ")}:"
+          end
         else
           puts "#{day.to_s.capitalize!}:"
-            end
         end
     end
   end
