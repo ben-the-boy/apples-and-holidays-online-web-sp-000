@@ -77,10 +77,10 @@ def all_supplies_in_holidays(holiday_hash)
         if day.to_s.include?("_")
           day.split("_")
           day.each do |word|
-            puts "  #{word.capitalize!.join(" ")}: #{supply_list {"
+            puts "  #{word.capitalize!.join(" ")}: #{supply_list.join(", ")}"
           end
         else
-          puts "  #{day.to_s.capitalize!}:"
+          puts "  #{day.to_s.capitalize!}: "
         end
     end
   end
