@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
           array.collect do |word|
             word.capitalize!
           end
-            puts "  #{new_array.join(" ")}: #{supply_list.join(", ")}"
+            puts "  #{array.join(" ")}: #{supply_list.join(", ")}"
           
         else
           puts "  #{day.to_s.capitalize!}: #{supply_list.join(", ")}"
