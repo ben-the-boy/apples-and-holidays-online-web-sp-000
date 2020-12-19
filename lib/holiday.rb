@@ -79,8 +79,9 @@ def all_supplies_in_holidays(holiday_hash)
           binding.pry
           array.collect do |word|
             word.capitalize!
-            puts "  #{new_array.join(" ")}: #{supply_list.join(", ")}"
           end
+            puts "  #{new_array.join(" ")}: #{supply_list.join(", ")}"
+          
         else
           puts "  #{day.to_s.capitalize!}: #{supply_list.join(", ")}"
         end
