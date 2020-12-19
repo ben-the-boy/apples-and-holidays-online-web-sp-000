@@ -71,31 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-holiday_hash.each do |season, holiday|
-  puts "#{season.to_s.capitalize}"
-    if season == :winter
-      holiday.each do |holiday, supplies|
-      holiday.to_s
-        if holiday.include?("_")
-          holiday.gsub("_"," ")
-          holiday.split
-          holiday.each do |word|
-          word.capitalize
-          "#{holiday.join(" ")}: #{supplies}"
-        else 
-          puts "#{holiday.capitalize}: #{supplies}"
-    elsif season == :summer
-    holiday.each do |holiday, supplies|
-      holiday.to_s
-  
-puts 
-  "#{season.capitalize}:
-    #{holiday}: #{supplies}"
-        end
-      end
-    end
-  end
-end
+
 end
 
 
